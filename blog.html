@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nuck Fews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+  </script>
+
+<meta name="theme-color" content="#ffffff"/>
+</head>
+
+<body>
+  
+  <header>
+      <ul class="navHead" id="nav">
+          <li id="navOption"><a href="index.html">The Nucking Fews</a></li> <!--Home-->
+          <li id="navOption"><a href="us.html">U.S.</a></li> <!--Gear Setting Img-->
+          <li id="navOption"><a href="international.html">International</a></li> <!--Selected favorite, articles and or news outlet-->
+          <li id="navOption"><a href="catagories.html">Catagories</a></li> <!--Catagories of news scrambled together to read-->
+
+      
+        <ul class="userInteraction" id="interaction">
+            <a href="index.html">
+                <img src="C:\Users\Bryan\desktop\newsapp\logo.png" id="logo" width="50px" height="50px">
+            </a>
+
+    <ol id="userNav"><a href="login.html">Login</a></ol>
+    <ol id="userNav"><a href="blog.html">Blog</a></ol>
+    </ul>
+  </header>
+
+  <br>
+
+  <div id="container">
+  <form>
+        <div class="form-group row">
+                <label for="PersonalBlog" class="col-sm-2 col-form-label"><h3></h3></label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control-plaintext" id="PersonalBlog">
+
+                  <textarea id="title"rows="1" cols="28" placeholder="Title"></textarea><br> <br/>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Reason of Post:</label>
+          <select class="form-control" id="argueOption">
+            <option value="Personal Article">Personal Article</option>
+            <option value="Debate">Debate</option>
+            <option  value="Argument">Argument</option>
+            <option  value="Counter-Argument">Counter-Argument</option>
+            <option  value="Opinion">Opinion</option>
+          </select> <br>
+    
+        <div class="form-group">
+                <label for="exampleFormControlTextarea2">Story & Details:</label> <br>
+                
+                
+                <!---->
+                <textarea id="textArea" rows="10" cols="120" placeholder="Stay on Topic!"></textarea> <br>
+                
+                <label for="exampleFormControlTextarea2">URL:</label> <br>
+                <!---->
+                <textarea id="TextArea2"rows="1" cols="120" placeholder="(Max: 3 Links)"></textarea> <br>
+                
+
+            <div class="form-group">Upload:
+              <label for="exampleFormControlFile1"></label>
+              <input type="file" class="form-control-file" id="fileUpload">
+            </div>
+        <div class ="urlInput">
+            <button id="submitButton" type="button" class="btn btn-outline-success">Submit</button>
+    </form>
+        </div>
+          
+
+   
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBs-9sUsSDZtLCfPshTGPL6_QMipEjfAVA",
+        authDomain: "project95x.firebaseapp.com",
+        databaseURL: "https://project95x.firebaseio.com",
+        projectId: "project95x",
+        storageBucket: "project95x.appspot.com",
+        messagingSenderId: "707308729308"
+      };
+      firebase.initializeApp(config);
+    </script>
+      
+    <script src="login.js"></script>
+</body>
+
+</html>
+
+<!--API Key: 1627a96079bd478ab06b35fac2b6bd49-->
+<!--newsapi.org-->
+<!--separate webpages.
+
+  "Home" -- 
+  "catagories" -- 
+  "favorites" -- 
+  "Login" -- 
+  "Help/Contact" --
+ -->

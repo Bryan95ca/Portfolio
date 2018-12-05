@@ -1,0 +1,221 @@
+
+/*Controls the font and background color*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 150;
+    background-color: #faefef57;
+/*Holds the navigation bar*/
+}
+header {
+    
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin:0;
+    padding:0;
+}
+
+/*Title of Articles*/
+h1 {
+    text-decoration: uppercase;
+    font-weight: 80;
+}
+
+header a:hover, a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: inherit;
+}
+
+/*content*/
+main {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+    grid-auto-flow: row dense;
+}
+
+/*Article*/
+.article h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+.article a,
+.article a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.article img {
+    width: 100%;
+}
+
+/*Holds a ton of code to auto design*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Subscription -- Links to other accounts regarding this webpage*/
+#newsletter {
+    padding: 10px;
+    color: black;
+    background: #ffffff;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: left;
+    margin-top: 15px;
+    
+}
+
+#newsletter input[type="email"] {
+    padding: 2px;
+    height: 25px;
+    width: 250px;
+}
+/*left side -- Nav Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+/*Bottom Nav Bar Placement*/
+.fa {
+    float: right;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    height: auto;
+    margin: auto;
+}
+/*Bottom Link design*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+/*Logo Link Colors*/
+  .fa-google {
+    color:  #dd4b39;
+  }
+  .fa-facebook {
+    color:  #3B5998;
+  }
+  .fa-reddit {
+    color: #ff5700;
+  }  
+.fa-twitter {
+    color: #55ACEE;
+  }
+
+/*Subscription Button Design*/
+#subButton {
+    height: 32px;
+    background: #08080893;
+    border: 0;
+    padding-left: 10px;
+    padding-right:20px;
+    color: #ffffff;
+}
+#subButton:hover{
+    background-color: rgba(102, 102, 102, 0.863);
+}
+
+/*Top-Nav Bar---Placed to the left*/
+li {
+    float: left;
+}
+/*Top-Nav Bar Design */
+li a {
+    display: block;
+    color: rgb(39, 35, 35);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(224, 219, 219, 0.678);
+}
+/*Top nav Bar -- Placed to the left*/
+ol {
+    float: right;
+}
+ol a {
+    display: block;
+    color: rgb(39, 35, 35);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ol a:hover {
+    background-color: rgba(224, 219, 219, 0.678);
+}
+
+/*Thumps up, thumbs down, and comment section. Make all hold information through firebase.*/
+.opinion {
+    float: left;
+    padding: 0;
+    margin: auto;
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+/*Opinion design*/
+.opinion:hover {
+  color: rgba(50, 50, 53, 0.87);
+}
+
+#argueOption {
+    width:250px;
+    text-align: center;
+}
+/**/
+#emailSub {
+    height: 250px;
+}
+/*Top Logo middle. Make it static resizing page. Find new Logo, (Create)*/
+#logo {  
+    position: relative;
+    left: 500px;
+    
+}
+/*inside of Login Page, Design and placement(mostly done with Jquery)*/
+#loginPage {
+    width: 35%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+}
+
+#blogPostBtn {
+    float: right;
+}
+#container {
+
+}
+/*
+body-Controls the background or page as whole.
+h1- controls h1 header tag
+header- controls everything in header tag --html--
+main- controls content of page
+artcles-control article
+*/
+
+/*
+add:
+better UI.
+Navigation.
+*/

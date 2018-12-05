@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nuck Fews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <meta name="theme-color" content="#ffffff"/>
+</head>
+
+<body>
+  
+
+<header>
+      <ul class="navHead">
+          <li id="navOption"><a href="index.html">The Nucking Fews</a></li> <!--Home Page-->
+          <li id="navOption"><a href="us.html">U.S.</a></li> <!--Gear Setting Img-->
+          <li id="navOption"><a href="international.html">International</a></li> <!--Selected favorite, articles and or news outlet-->
+          <li id="navOption"><a href="catagories.html">Catagories</a></li> <!--Catagories of news scrambled together to read-->
+          <ul class="userInteraction" id="interaction">
+              
+                <a href="index.html">
+                    <img src="C:\Users\Bryan\desktop\newsapp\logo.png" id="logo" width="50px" height="50px">
+                </a>
+
+                <ol id="userNav"><a href="login.html">Login</a></ol>
+                <ol id="userNav"><a href="blogPage.html">Blog</a></ol>
+                </ul>
+              </header>
+
+
+  <br>
+
+          <a href="blog.html" class="btn btn-outline-success" id="blogPostBtn">POST</a></button>
+
+          
+
+          <div id="container">
+
+          </div>
+
+   
+    <section id = "newsletter">
+    <div class="container">
+          
+          <a href="https://reddit.com" class="fa fa-reddit"></a>
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://google.com/" class="fa fa-google"></a>
+       
+          <form>
+              <input type="email" placeholder="Enter Email...">
+               <button id="subButton">Subscribe</button> 
+          </form>
+    </section>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBs-9sUsSDZtLCfPshTGPL6_QMipEjfAVA",
+        authDomain: "project95x.firebaseapp.com",
+        databaseURL: "https://project95x.firebaseio.com",
+        projectId: "project95x",
+        storageBucket: "project95x.appspot.com",
+        messagingSenderId: "707308729308"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+
+    <script src="index.js"></script>
+
+  
+</body>
+
+</html>

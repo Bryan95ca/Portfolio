@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nuck Fews</title>
+  <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta name="theme-color" content="#ffffff"/>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+  <script>
+        // Initialize Firebase
+         var config = {
+            apiKey: "AIzaSyBs-9sUsSDZtLCfPshTGPL6_QMipEjfAVA",
+            authDomain: "project95x.firebaseapp.com",
+            databaseURL: "https://project95x.firebaseio.com",
+            projectId: "project95x",
+            storageBucket: "project95x.appspot.com",
+            messagingSenderId: "707308729308"
+            };
+            firebase.initializeApp(config);
+    </script>
+
+
+</head>
+
+<body>
+
+
+  <header>
+      <ul class="navHead">
+          <li id="navOption"><a href="index.html">The Nucking Fews</a></li>
+          <li id="navOption"><a href="us.html">U.S.</a></li> <!--Gear Setting Img-->
+          <li id="navOption"><a href="international.html">International</a></li> <!--Selected favorite, articles and or news outlet-->
+          <li id="navOption"><a href="catagories.html">Catagories</a></li> <!--Catagories of news scrambled together to read-->
+          <ul class="userInteraction" id="interaction">
+
+                <a href="index.html">
+                        <img src="C:\Users\Bryan\desktop\newsapp\logo.png" id="logo" width="50px" height="50px">
+                    </a>
+    
+
+                <ol id="userNav"><a href="login.html">Login</a></ol>
+                <ol id="userNav"><a href="blogPage.html">Blog</a></ol>
+                </ul>
+              </header>
+                <!--Login-->
+                <div class="container" id="loginPage">      
+
+                 <form >
+              
+                    <div class="form-group">
+                      <label for="inputEmail">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>-->
+                    </div>
+                <!--Login-->
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                      <small id="emailHelp" class="form-text text-muted">We will never share your information.</small>
+                    </div>
+
+                    <button  id="signIn" type="button" class="btn btn-outline-success">Submit</button>
+                    <button  id="newAccount" type="button" class="btn btn-outline-warning">Create New Account</button>
+                    <button  id="loginGoogle" type="button" class="btn btn-outline-primary">Login with Google</button>
+                    <button  id="signOut" type="button" class="btn btn-outline-danger">Log out</button>
+  
+                
+                </form>
+
+                </div>
+
+                </div>
+
+               
+
+          
+
+                <script
+                src="https://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                crossorigin="anonymous"></script>
+
+    <script src="login.js"></script>
+  
+</body>
+
+</html>
+
+<!--API Key: 1627a96079bd478ab06b35fac2b6bd49-->
+<!--newsapi.org-->
+<!--separate webpages.
+
+  "Home" -- 
+  "catagories" -- 
+  "favorites" -- 
+  "Login" -- 
+  "Help/Contact" --
+ -->
